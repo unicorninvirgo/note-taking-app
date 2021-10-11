@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const api = require('./api/index.js');
 
-const PORT = 3011;
+const PORT = 3001;
 
 const app = express();
 
