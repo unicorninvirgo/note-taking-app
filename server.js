@@ -21,7 +21,7 @@ app.get('/', (req, res) =>
 
 // GET Route for feedback page
 app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/notes.html'))
+  res.sendFile(path.join(__dirname, '/notes.html'))
 );
 
 app.listen(PORT, () =>
