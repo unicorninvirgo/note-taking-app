@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const api = require('./api/index.js');
 
-const PORT = 3001;
+const PORT = 3011;
 
 const app = express();
 
@@ -21,7 +21,7 @@ app.get('/', (req, res) =>
 
 // GET Route for feedback page
 app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, '/notes.html'))
+  res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
 
 app.listen(PORT, () =>
